@@ -1,0 +1,110 @@
+@font-face {
+	font-family: beba;
+	src: url('../fonts/Bebas-Regular.ttf');
+}
+
+@font-face {
+	font-family: neue;
+	src: url('../fonts/BebasNeue-Regular.ttf');
+}
+
+.menu {
+	font-family: beba;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	max-height: 90%;
+	overflow-y: auto;
+}
+
+.menu button {
+	font-family: neue;
+	border: 2px ridge black;
+	border-radius: 12px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin: 1px;
+}
+
+.menu button:hover {
+	font-family: neue;
+	border: 2px ridge rgb(255, 153, 0);
+	border-radius: 12px;
+}
+
+.menu>table {
+	border-spacing: 0;
+	border-radius: 12px;
+	min-width: 400px;
+	margin: 10px;
+}
+
+.menu>table>thead {
+	font-family: neue;
+	font-size: 20px;
+	text-shadow:3px 3px 8px black;
+	font-weight: lighter;
+	text-align: center;
+	border: 2px solid black;
+	border-radius: 12px;
+  	background: linear-gradient(
+      	60deg,
+		hsl(0, 100.0%, 31.6%),
+		hsl(7, 95.5%, 43.7%),
+		hsl(14, 96.8%, 48.4%),
+		hsl(22, 99.2%, 52.4%),
+		hsl(43, 100.0%, 56.1%),
+      	hsl(57, 100.0%, 68.2%)
+    );
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    animation: rotate 1.5s alternate infinite;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	margin: 10px;
+}
+
+.menu td {
+	text-align: center;
+	padding: 8px;
+}
+
+.menu td {
+	text-align: center;
+	padding: 8px;
+}
+
+.menu tbody tr:nth-child(even) {
+	margin: 10px;
+	background-color: #1414146d;
+	color: white;
+}
+
+.menu tbody tr:nth-child(even):hover {
+	margin: 10px;
+	background-color: #0a0a0aa1;
+	color: white;
+}
+
+.menu tbody tr:nth-child(odd) {
+	margin: 10px;
+	background-color: #1414146d;
+	color: white;
+}
+
+.menu tbody tr:nth-child(odd):hover {
+	margin: 10px;
+	background-color: #0a0a0aa1;
+	color: white;
+}
+
+@keyframes rotate {
+	100% {
+		transform: scale(1.03, 1.03);
+		background-position: 100% 0%;
+	}
+}
