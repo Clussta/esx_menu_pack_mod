@@ -3,8 +3,7 @@
 A very simple custom design for the basics of ESX. Hope you like it if you find it.
 
 ## Video
-![video-1](https://streamable.com/o34lo9)
-
+![caption](https://streamable.com/o34lo9)
 ## Acknowledgments
 
 All credits go to the ESX-Org. I just re-designed it
