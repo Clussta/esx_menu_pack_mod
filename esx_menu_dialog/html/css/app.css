@@ -1,0 +1,176 @@
+/* Fonts */
+@font-face {
+	font-family: neue;
+	src: url('../fonts/BebasNeue-Regular.ttf');
+}
+
+@font-face {
+	font-family: beba;
+	src: url('../fonts/Bebas-Regular.ttf');
+}
+
+/* Animations */
+@keyframes rota {
+	100% {
+		transform: scale(1.05, 1.05);
+		background-position: 100% 0%;
+	}
+}
+
+@keyframes rotate {
+	100% {
+		transform: scale(1.03, 1.03);
+		background-position: 100% 0%;
+	}
+}
+
+/* WORK */
+#controls {
+	font-family: neue;
+	font-size: 3em;
+	color: #FFF;
+	position: absolute;
+	bottom: 40;
+	right: 40;
+}
+
+.controls {
+	display: none;
+}
+
+.dialog {
+	font-family: beba;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 350px;
+	height: 104px;
+	transform: translate(-50%, -50%);
+}
+
+.dialog.big {
+	height: 200px;
+}
+
+.dialog .headimage {
+	position: absolute;
+	left: 25;
+	top: -35;
+    height: 40px;
+    overflow: hidden;
+}
+
+.dialog .head {
+	font-family: neue;
+	font-size: 25px;
+	text-shadow:3px 3px 8px black;
+	font-weight: lighter;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	border: 2px ridge black;
+	border-radius: 12px;
+  	background: linear-gradient(
+      	60deg,
+		hsl(0, 100.0%, 31.6%),
+		hsl(7, 95.5%, 43.7%),
+		hsl(14, 96.8%, 48.4%),
+		hsl(22, 99.2%, 52.4%),
+		hsl(43, 100.0%, 56.1%),
+      	hsl(57, 100.0%, 68.2%)
+    );
+    background-size: 300% 300%;
+    background-position: 0 50%;
+	animation: rotate 1s alternate infinite;
+	
+	margin: 3px;
+}
+
+.dialog .head span:before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.dialog input[type="text"]  {
+	font-family: neue;
+	font-size: 17px;
+	text-align: center;
+	letter-spacing: 0.5px;
+	width: 100%;
+	height: 32px;
+	border: 2px ridge black;
+	border-radius: 12px;
+	margin:2px;
+	color: #fff;
+	background-color: #1414146d;
+	outline: 0;
+}
+
+.dialog input[type="text"]:hover  {
+	letter-spacing: 1px;
+	width: 100%;
+	height: 32px;
+	border: 2px ridge #ff7d19;
+	border-radius: 12px;
+	animation: rota 1s alternate infinite;
+	margin-top: 2px;
+	background-color: #0a0a0ad0;
+}
+
+.dialog textarea {
+	width: 100%;
+	height: 128px;
+	
+}
+
+.dialog button[name="submit"] {
+	font-family: neue;
+	letter-spacing: 1px;
+	color: #fff;
+	width: 48%;
+	height: 32px;
+	border: 2px ridge black;
+	border-radius: 12px;
+	margin-left: 8px;
+	margin-right: 3px;
+	margin-top: 2px;
+	background-color: #1414146d;
+}
+
+.dialog button[name="submit"]:hover {
+	letter-spacing: 1px;
+	color: #61cd14;
+	width: 48%;
+	border: 2px ridge #7fe825;
+	border-radius: 12px;
+	animation: rota 1s alternate infinite;
+	margin-top: 2px;
+	background-color: #0a0a0ad0;
+}
+
+.dialog button[name="cancel"] {
+	font-family: neue;
+	letter-spacing: 1px;
+	color: #fff;
+	width: 48%;
+	height: 32px;
+	border: 2px ridge black;
+	border-radius: 12px;
+	background-color: #1414146d;
+	margin-top: 2px;
+	margin-left: 2px;
+}
+
+.dialog button[name="cancel"]:hover {
+  letter-spacing: 1px;
+  color: #c91c05;
+  width: 48%;
+  border: 2px ridge #e83625;
+  border-radius: 12px;
+  animation: rota 1s alternate infinite;
+  margin-top: 2px;
+  background-color: #0a0a0ad0;
+}
